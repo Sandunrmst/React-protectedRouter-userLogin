@@ -30,10 +30,10 @@ const Login = () => {
     });
   }
   return (
-    <div>
-      <input ref={username} type="text" placeholder="username"/>
-      <input ref={password} type="password" placeholder="password"/>
-      <button onClick={logingSubmit}>Login</button>
+    <div className="h-screen flex flex-col justify-center items-center gap-4">
+      <input className="bg-slate-300 p-2 rounded-lg text-lg w-3/12 text-neutral-950" ref={username} type="text" placeholder="username"/>
+      <input className="bg-slate-300 p-2 rounded-lg text-lg w-3/12 text-neutral-950" ref={password} type="password" placeholder="password"/>
+      <button className="p-2 rounded-lg bg-orange-300 w-3/12" onClick={logingSubmit}>Login</button>
     </div>
   )
 }
